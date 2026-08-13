@@ -1,25 +1,25 @@
 import random
 
-randomsaz = random.randint(1, 100)
+randomize = random.randint(1, 100)
 guesses = 0
 while True :
     try:
-        karbar = int(input('adad ra vared konid ='))
+        number = int(input('insert your number ='))
         guesses += 1
-        if karbar == randomsaz : 
-            print ('barande shodid')
+        if number == randomize : 
+            print ('you won')
             break
 
-        elif karbar > randomsaz :
-            print ('paiin beravid')
+        elif number > randomize :
+            print ('go down')
 
         else:
-            print ('bala beravid')
+            print ('go up')
 
         if guesses > 7 :
-            print(randomsaz)
+            print(randomize)
             break
 
     except ValueError:
-        print ('adad dorost vared konid')
+        print ('please insert number')
     
